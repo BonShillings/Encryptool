@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sejunda.project.encryptool.ConnectFragment" >
+ 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textServer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.00"
+            android:text="Server Information"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.00"
+            android:text="not connected..."
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.00"
+            android:text="Enter Server IP below" />
+
+        <EditText
+            android:id="@+id/server_ip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.00"
+            android:ems="10"
+            android:text="Server IP" />
+
+        <Button
+            android:id="@+id/serverConnectButton"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:onClick="connect"
+            android:text="Connect to Server" />
+
+        <TextView
+            android:id="@+id/textContacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.00"
+            android:text="Contacts"
+            android:textSize="24sp" />
+
+        <ListView
+            android:id="@+id/listContacts"
+            android:layout_width="match_parent"
+            android:layout_height="121dp" >
+        </ListView>
+
+        <Button
+            android:id="@+id/messageButton"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:onClick="refreshContacts"
+            android:text="Refresh Contacts" />
+
+        <Button
+            android:id="@+id/serverInitializeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="initializeServer"
+            android:text="Act as Server" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Encryptool</string>
+    <string name="title_section1">Encryptool</string>
+    <string name="title_section2">Message</string>
+    <string name="title_section3">Connect</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_list_view_loader">ListViewLoader</string>
+    <string name="title_activity_server">ServerActivity</string>
+    <string name="localIP">IP: </string>
+
+</resources>

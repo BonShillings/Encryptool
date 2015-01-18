@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sejunda.project.encryptool.MessageFragment" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/connectionsText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="Connections"
+        android:textSize="24sp" />
+
+    <ListView
+        android:id="@+id/connectionsList"
+        android:layout_width="match_parent"
+        android:layout_height="125dp" />
+
+    <EditText
+        android:id="@+id/messageText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="enter message here…" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/messageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="sendMessage"
+        android:text="Send Message" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="Messages"
+        android:textSize="24sp" />
+
+    <ListView
+        android:id="@+id/ListView01"
+        android:layout_width="match_parent"
+        android:layout_height="135dp" >
+    </ListView>
+</LinearLayout>
+
+</FrameLayout>
